@@ -9,8 +9,7 @@ var PORT = process.env.PORT || 3000;
 
 
 
-
-mongoose.connect("mongodb://localhost/mongotime", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mongotime", { useNewUrlParser: true })
 mongoose.set('useCreateIndex', true)
 
 app.use(express.urlencoded({ extended: false }));
