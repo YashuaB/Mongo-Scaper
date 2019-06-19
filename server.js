@@ -1,6 +1,6 @@
 var path = require("path");
 var express = require("express");
-var mongoose = require("mongoose");git
+var mongoose = require("mongoose");
 var exphbs = require("express-handlebars");
 var app = express();
 
