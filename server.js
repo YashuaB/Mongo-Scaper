@@ -1,21 +1,17 @@
 var path = require("path");
 var express = require("express");
-var mongojs = require("mongojs");
 var mongoose = require("mongoose");
-
-var axios = require("axios");
-var cheerio = require("cheerio");
 var exphbs = require("express-handlebars");
 var app = express();
 
 var PORT = process.env.PORT || 3000;
 
 
-const db = require("./models");
 
 
-mongoose.connect("mongodb://localhost/mongotime", { useFindAndModify: false });
-var mc = mongoose.connection;
+
+mongoose.connect("mongodb://localhost/mongotime", { useNewUrlParser: true });
+mongoose.set('useCreateIndex', true)
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
