@@ -7,9 +7,9 @@ Mongo scrapes articles from The Ny Times and displays them the information on th
 Demo of app: [Mongo-Scraper](https://immense-dawn-88488.herokuapp.com/)
 
 ## Built With
-Node.js
-CSS
-Bootstrap
+*Node.js
+*CSS
+*Bootstrap
 ### Prerequisites
 Things you need to install the software and how to install them
 
